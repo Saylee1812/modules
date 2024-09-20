@@ -1,0 +1,203 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+    --primary-color: #e12d26;
+    --primary-color-dark: #e12d26;
+    --text-dark: #0a0a0a;
+    --text-light: #737373;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--extra-light);
+}
+
+nav {
+    background-color:  #f3f4f6;
+    padding: 1rem 2rem;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    color:   #0a0a0a;
+}
+
+.nav__logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:  #0a0a0a;
+    text-decoration: none;
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+}
+
+.nav__links li {
+    margin-left: 2rem;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color:  #0a0a0a;
+    font-weight: 500;
+}
+
+.nav__btns .btn {
+    background-color: #0a0a0a;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav__btns .btn:hover {
+    background-color:  #737373;
+    color: var(--white);
+}
+
+.container {
+    display: flex;
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+aside.sidebar {
+  width: 400px;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  margin-right: 2rem;
+}
+
+aside.sidebar h3 {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+aside.sidebar ul {
+    list-style: none;
+}
+
+aside.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+aside.sidebar ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+aside.sidebar ul li a:hover {
+    color: var(--primary-color);
+}
+
+main {
+    width: 75%;
+}
+
+main .content-section {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+main .content-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+main .content-section h3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+main .content-section p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+main .content-section ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: var(--text-dark);
+}
+
+main .content-section ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+main .content-section .video-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+
+button.test-knowledge {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  margin-top: 15px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.test-knowledge:hover {
+  background-color: var(--primary-color-dark);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

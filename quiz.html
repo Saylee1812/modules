@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time!</title>
+    <link rel="stylesheet" href="quiz.css">
+  
+</head>
+<body>
+  <nav>
+    <div class="nav__header">
+      <div class="nav__logo">
+        <a href="#" class="logo">PurePlay</a>
+      </div>
+      <div class="nav_menu_btn" id="menu-btn">
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#videos">VIDEOS</a></li>
+      <li><a href="#games">GAMES</a></li>
+      <li><a href="#package">ABOUT US</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#">PROFILE</a></li>
+    </ul>
+    <div class="nav__btns">
+      <button class="btn"><i class="fa-solid fa-user"></i>  PROFILE</button>
+    </div>
+  </nav>
+
+ 
+<div class="layout">
+ <div id="quiztime">Module 1: Anti-Doping Awareness </div>
+<div class="quiz-container" id="quiz">
+    <div class="quiz-header">
+      
+      <h2 id="question">Question Text</h2>
+      
+      <ul>
+        <li> 
+          <label class="container">
+           <input checked="checked" type="checkbox"name="answer" id="a" class="answer">
+          <div class="checkmark"></div>
+          </label>
+          <label for="a" id="a_text">Answer</label>
+        
+        </li>
+        <li>
+          <label class="container">
+            <input checked="checked" type="checkbox"name="answer" id="b" class="answer">
+           <div class="checkmark"></div>
+           </label>
+          
+          <label for="b" id="b_text">Answer</label>
+        </li>
+        <li>
+          <label class="container">
+            <input checked="checked" type="checkbox"name="answer" id="c" class="answer">
+           <div class="checkmark"></div>
+           </label>
+          <label for="c" id="c_text">Answer</label>
+        </li>
+        <li>
+          <label class="container">
+            <input checked="checked" type="checkbox"name="answer" id="d" class="answer">
+           <div class="checkmark"></div>
+           </label>
+          <label for="d" id="d_text">Answer</label>
+          
+        </li>
+      </ul>
+    </div>
+    
+
+    
+    <div class="next">
+    <button id="prev"><</button>
+    <button id="submit">Submit</button>
+    <button id="prev">></button>
+  </div>
+    
+  </div>
+</div>
+  <script src="quiz.js"></script>
+</body>
